@@ -1,13 +1,27 @@
 import React from 'react';
 import { Layout , Menu, Breadcrumb,theme } from 'antd';
-
+import logo from '/src/img/pblaze_logo.png';
 const { Header, Content, Footer } = Layout;
 const currentYear = new Date().getFullYear(); //版权年份
-const nav_number = 5; //标签页数量
-const items = new Array(nav_number).fill(null).map((_, index) => ({
-    key: index + 1,
-    label: `nav ${index + 1}`,
-}));
+
+const items = [
+    {
+        label: '主页',
+        key: '1',
+        onClick: () => { window.location.href = '/'; }
+    },
+    {
+        label: '关于我们',
+        key: '2',
+        onClick: () => { window.location.href = '/about'; }
+    },
+    {
+        label: '版权信息',
+        key: '3',
+        onClick: () => { window.location.href = '/copyright'; }
+    },
+];
+
 
 const App: React.FC = () => {
     const {
@@ -18,7 +32,7 @@ const App: React.FC = () => {
             <Layout>
 
                 <Header style={{display: 'flex', alignItems: 'center'}}>
-                    <h1>
+                    <h1 style={{ color: 'white' }}>
                         PBlaze
                     </h1>
                     <div className="pblaze-logo"/>
