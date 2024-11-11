@@ -1,6 +1,5 @@
 import React from 'react';
 import { Layout , Menu, Breadcrumb,theme } from 'antd';
-import logo from '/src/img/pblaze_logo.png';
 const { Header, Content, Footer } = Layout;
 const currentYear = new Date().getFullYear(); //版权年份
 
