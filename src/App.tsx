@@ -46,7 +46,7 @@ const App: React.FC = () => {
                     </div>
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>
-                    <p>PBlaze Tech© 2024 PBlaze.com. <a href="/LICENSE">Apache License 2.0</a>. KaliJerry保留所有权利。</p>
+                    <p>Copyright © 2024 KaliJerry. Licensed under the <a href="/LICENSE">Apache License 2.0</a> PBlaze.com.</p>
                 </Footer>
             </Layout>
         </div>
