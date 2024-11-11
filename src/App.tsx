@@ -17,7 +17,7 @@ const App: React.FC = () => {
             <Layout>
 
                 <Header style={{display: 'flex', alignItems: 'center'}}>
-                    <h1 color={'blue'}>
+                    <h1>
                         PBlaze
                     </h1>
                     <div className="pblaze-logo"/>
