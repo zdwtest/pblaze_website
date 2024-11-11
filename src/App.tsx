@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout , Menu, Breadcrumb,theme } from 'antd';
 
 const { Header, Content, Footer } = Layout;
+const currentYear = new Date().getFullYear(); //版权年份
 const nav_number = 5; //标签页数量
 const items = new Array(nav_number).fill(null).map((_, index) => ({
     key: index + 1,
@@ -46,7 +47,7 @@ const App: React.FC = () => {
                     </div>
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>
-                    <p>Copyright © 2024 KaliJerry. Licensed under the <a href="/LICENSE">Apache License 2.0</a> PBlaze.com.</p>
+                    <p>Copyright © 2024-{currentYear} KaliJerry. Licensed under the <a href="/LICENSE">Apache License 2.0</a> PBlaze.com.</p>
                 </Footer>
             </Layout>
         </div>
