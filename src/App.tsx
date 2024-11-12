@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout , Menu, Breadcrumb,theme } from 'antd';
+import {Layout, Menu, Breadcrumb, theme} from 'antd';
 import AppMenuLeft from './tsx/menu_left';
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -62,7 +62,7 @@ const App: React.FC = () => {
                         }}
                     >
                         <h1>欢迎来到PBlaze</h1>
-                        <p>这是一个基于React的前端项目</p>
+                        <p>这是一个基于React的前端项目，组件库来自<a href={'https://ant-design.antgroup.com/index-cn'}>Ant Design</a></p>
                         <p>项目地址：<a href='https://github.com/zdwtest/pblaze_website'>Github.com</a>
                         </p>
 
